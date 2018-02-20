@@ -10,7 +10,7 @@ import UIKit
 
 class WorkoutHistoryTableViewCell: UITableViewCell {
 
-    @IBOutlet var workout: UILabel!
+    @IBOutlet var workoutLabel: UILabel!
     @IBOutlet var lastDone: UILabel!
 
     override func awakeFromNib() {
@@ -19,7 +19,10 @@ class WorkoutHistoryTableViewCell: UITableViewCell {
     }
 
     func configure(with workout: Workout) {
-        
+        workoutLabel.text = workout.displayableString
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/YY"
+        lastDone.text = dateFormatter.string(from: workout.lastPerformed)
     }
 
 }

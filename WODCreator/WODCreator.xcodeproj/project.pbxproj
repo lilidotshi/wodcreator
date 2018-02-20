@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		22C541EC203B93D6006A9BDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C541EB203B93D6006A9BDF /* AppDelegate.swift */; };
-		22C541EE203B93D6006A9BDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C541ED203B93D6006A9BDF /* ViewController.swift */; };
+		22C541EE203B93D6006A9BDF /* WODCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C541ED203B93D6006A9BDF /* WODCreatorViewController.swift */; };
 		22C541F1203B93D6006A9BDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C541EF203B93D6006A9BDF /* Main.storyboard */; };
 		22C541F6203B93D6006A9BDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C541F4203B93D6006A9BDF /* LaunchScreen.storyboard */; };
 		22C54201203B93D7006A9BDF /* WODCreatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C54200203B93D7006A9BDF /* WODCreatorTests.swift */; };
@@ -19,6 +19,7 @@
 		22C54220203BAB37006A9BDF /* WorkoutHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C5421F203BAB37006A9BDF /* WorkoutHistoryTableViewCell.xib */; };
 		22C54222203BAB91006A9BDF /* MuscleGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C54221203BAB91006A9BDF /* MuscleGroups.swift */; };
 		22C54224203BB72B006A9BDF /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C54223203BB72B006A9BDF /* Equipment.swift */; };
+		22C54229203CBC21006A9BDF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C54228203CBC21006A9BDF /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,7 @@
 /* Begin PBXFileReference section */
 		22C541E8203B93D6006A9BDF /* WODCreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WODCreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C541EB203B93D6006A9BDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22C541ED203B93D6006A9BDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22C541ED203B93D6006A9BDF /* WODCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WODCreatorViewController.swift; sourceTree = "<group>"; };
 		22C541F0203B93D6006A9BDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22C541F5203B93D6006A9BDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22C541F7203B93D6006A9BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		22C5421F203BAB37006A9BDF /* WorkoutHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutHistoryTableViewCell.xib; sourceTree = "<group>"; };
 		22C54221203BAB91006A9BDF /* MuscleGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleGroups.swift; sourceTree = "<group>"; };
 		22C54223203BB72B006A9BDF /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		22C54228203CBC21006A9BDF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,17 +109,12 @@
 		22C541EA203B93D6006A9BDF /* WODCreator */ = {
 			isa = PBXGroup;
 			children = (
+				22C54226203CBBAD006A9BDF /* UI */,
+				22C54225203CBB90006A9BDF /* Workout */,
 				22C541EB203B93D6006A9BDF /* AppDelegate.swift */,
-				22C541ED203B93D6006A9BDF /* ViewController.swift */,
-				22C541EF203B93D6006A9BDF /* Main.storyboard */,
 				22C54219203B96BB006A9BDF /* Assets.xcassets */,
 				22C541F4203B93D6006A9BDF /* LaunchScreen.storyboard */,
 				22C541F7203B93D6006A9BDF /* Info.plist */,
-				22C5421B203BA137006A9BDF /* WorkoutHistoryTableViewCell.swift */,
-				22C5421F203BAB37006A9BDF /* WorkoutHistoryTableViewCell.xib */,
-				22C5421D203BAB14006A9BDF /* Workouts.swift */,
-				22C54221203BAB91006A9BDF /* MuscleGroups.swift */,
-				22C54223203BB72B006A9BDF /* Equipment.swift */,
 			);
 			path = WODCreator;
 			sourceTree = "<group>";
@@ -138,6 +135,36 @@
 				22C5420D203B93D7006A9BDF /* Info.plist */,
 			);
 			path = WODCreatorUITests;
+			sourceTree = "<group>";
+		};
+		22C54225203CBB90006A9BDF /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				22C5421D203BAB14006A9BDF /* Workouts.swift */,
+				22C54221203BAB91006A9BDF /* MuscleGroups.swift */,
+				22C54223203BB72B006A9BDF /* Equipment.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		22C54226203CBBAD006A9BDF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				22C54227203CBC0A006A9BDF /* Home */,
+				22C541EF203B93D6006A9BDF /* Main.storyboard */,
+				22C541ED203B93D6006A9BDF /* WODCreatorViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		22C54227203CBC0A006A9BDF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				22C5421B203BA137006A9BDF /* WorkoutHistoryTableViewCell.swift */,
+				22C5421F203BAB37006A9BDF /* WorkoutHistoryTableViewCell.xib */,
+				22C54228203CBC21006A9BDF /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,8 +305,9 @@
 				22C54222203BAB91006A9BDF /* MuscleGroups.swift in Sources */,
 				22C5421C203BA137006A9BDF /* WorkoutHistoryTableViewCell.swift in Sources */,
 				22C54224203BB72B006A9BDF /* Equipment.swift in Sources */,
-				22C541EE203B93D6006A9BDF /* ViewController.swift in Sources */,
+				22C541EE203B93D6006A9BDF /* WODCreatorViewController.swift in Sources */,
 				22C541EC203B93D6006A9BDF /* AppDelegate.swift in Sources */,
+				22C54229203CBC21006A9BDF /* HomeViewController.swift in Sources */,
 				22C5421E203BAB14006A9BDF /* Workouts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -44,7 +44,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="lastDone" destination="qGf-E6-voS" id="NAJ-8n-S7X"/>
-                <outlet property="workout" destination="Rxp-b8-Hcm" id="yI0-Xw-YXT"/>
+                <outlet property="workoutLabel" destination="Rxp-b8-Hcm" id="s87-DJ-XMh"/>
             </connections>
         </tableViewCell>
     </objects>
