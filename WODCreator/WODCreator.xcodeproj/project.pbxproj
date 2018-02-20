@@ -15,6 +15,10 @@
 		22C5420C203B93D7006A9BDF /* WODCreatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C5420B203B93D7006A9BDF /* WODCreatorUITests.swift */; };
 		22C5421A203B96BB006A9BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C54219203B96BB006A9BDF /* Assets.xcassets */; };
 		22C5421C203BA137006A9BDF /* WorkoutHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C5421B203BA137006A9BDF /* WorkoutHistoryTableViewCell.swift */; };
+		22C5421E203BAB14006A9BDF /* Workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C5421D203BAB14006A9BDF /* Workouts.swift */; };
+		22C54220203BAB37006A9BDF /* WorkoutHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C5421F203BAB37006A9BDF /* WorkoutHistoryTableViewCell.xib */; };
+		22C54222203BAB91006A9BDF /* MuscleGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C54221203BAB91006A9BDF /* MuscleGroups.swift */; };
+		22C54224203BB72B006A9BDF /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C54223203BB72B006A9BDF /* Equipment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		22C5420D203B93D7006A9BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22C54219203B96BB006A9BDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22C5421B203BA137006A9BDF /* WorkoutHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		22C5421D203BAB14006A9BDF /* Workouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workouts.swift; sourceTree = "<group>"; };
+		22C5421F203BAB37006A9BDF /* WorkoutHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		22C54221203BAB91006A9BDF /* MuscleGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleGroups.swift; sourceTree = "<group>"; };
+		22C54223203BB72B006A9BDF /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				22C541F4203B93D6006A9BDF /* LaunchScreen.storyboard */,
 				22C541F7203B93D6006A9BDF /* Info.plist */,
 				22C5421B203BA137006A9BDF /* WorkoutHistoryTableViewCell.swift */,
+				22C5421F203BAB37006A9BDF /* WorkoutHistoryTableViewCell.xib */,
+				22C5421D203BAB14006A9BDF /* Workouts.swift */,
+				22C54221203BAB91006A9BDF /* MuscleGroups.swift */,
+				22C54223203BB72B006A9BDF /* Equipment.swift */,
 			);
 			path = WODCreator;
 			sourceTree = "<group>";
@@ -235,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C54220203BAB37006A9BDF /* WorkoutHistoryTableViewCell.xib in Resources */,
 				22C541F6203B93D6006A9BDF /* LaunchScreen.storyboard in Resources */,
 				22C5421A203B96BB006A9BDF /* Assets.xcassets in Resources */,
 				22C541F1203B93D6006A9BDF /* Main.storyboard in Resources */,
@@ -262,9 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C54222203BAB91006A9BDF /* MuscleGroups.swift in Sources */,
 				22C5421C203BA137006A9BDF /* WorkoutHistoryTableViewCell.swift in Sources */,
+				22C54224203BB72B006A9BDF /* Equipment.swift in Sources */,
 				22C541EE203B93D6006A9BDF /* ViewController.swift in Sources */,
 				22C541EC203B93D6006A9BDF /* AppDelegate.swift in Sources */,
+				22C5421E203BAB14006A9BDF /* Workouts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

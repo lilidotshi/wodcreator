@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -76,39 +75,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J1S-0o-esO">
                                 <rect key="frame" x="0.0" y="394" width="375" height="224"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="74" id="FiL-ey-JEe">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="74"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FiL-ey-JEe" id="QAe-wa-bik">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Squat Mania: 50 Air Squats, 50 Front Squats (95lbs), 50 Back Squats (95lbs)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="way-jf-uJB">
-                                                    <rect key="frame" x="15" y="11" width="345" height="33.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Crushed: 12/06/17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7u-NX-DZU">
-                                                    <rect key="frame" x="15" y="49.5" width="345" height="14"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="C7u-NX-DZU" secondAttribute="trailing" id="1zc-lq-dVD"/>
-                                                <constraint firstItem="C7u-NX-DZU" firstAttribute="leading" secondItem="QAe-wa-bik" secondAttribute="leadingMargin" id="G1P-gM-EQB"/>
-                                                <constraint firstItem="C7u-NX-DZU" firstAttribute="top" secondItem="way-jf-uJB" secondAttribute="bottom" constant="5" id="LfB-lt-OOe"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="way-jf-uJB" secondAttribute="trailing" id="Qbn-MN-4Gq"/>
-                                                <constraint firstItem="C7u-NX-DZU" firstAttribute="bottom" secondItem="QAe-wa-bik" secondAttribute="bottomMargin" id="ZOX-jN-v3b"/>
-                                                <constraint firstItem="way-jf-uJB" firstAttribute="top" secondItem="QAe-wa-bik" secondAttribute="topMargin" id="rv4-OW-6ch"/>
-                                                <constraint firstItem="way-jf-uJB" firstAttribute="leading" secondItem="QAe-wa-bik" secondAttribute="leadingMargin" id="xl3-Hl-pvw"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

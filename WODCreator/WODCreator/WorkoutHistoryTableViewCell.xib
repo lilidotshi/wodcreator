@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="74" id="PGA-4N-eLa" customClass="WorkoutHistoryTableViewCell" customModule="WODCreator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PGA-4N-eLa" id="glo-N4-wGr">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Squat Mania: 50 Air Squats, 50 Front Squats (95lbs), 50 Back Squats (95lbs)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxp-b8-Hcm">
+                        <rect key="frame" x="16" y="11" width="343" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Crushed: 12/06/17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGf-E6-voS">
+                        <rect key="frame" x="16" y="49.5" width="343" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Rxp-b8-Hcm" secondAttribute="trailing" id="CpC-pP-0cm"/>
+                    <constraint firstItem="Rxp-b8-Hcm" firstAttribute="top" secondItem="glo-N4-wGr" secondAttribute="topMargin" id="Grt-EK-eTG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qGf-E6-voS" secondAttribute="trailing" id="MLs-4n-Quy"/>
+                    <constraint firstItem="qGf-E6-voS" firstAttribute="leading" secondItem="glo-N4-wGr" secondAttribute="leadingMargin" id="Npc-0u-mIc"/>
+                    <constraint firstItem="qGf-E6-voS" firstAttribute="bottom" secondItem="glo-N4-wGr" secondAttribute="bottomMargin" id="YLP-Tl-VhB"/>
+                    <constraint firstItem="qGf-E6-voS" firstAttribute="top" secondItem="Rxp-b8-Hcm" secondAttribute="bottom" constant="5" id="hK2-Uk-4Xk"/>
+                    <constraint firstItem="Rxp-b8-Hcm" firstAttribute="leading" secondItem="glo-N4-wGr" secondAttribute="leadingMargin" id="lOz-c7-L3i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lastDone" destination="qGf-E6-voS" id="NAJ-8n-S7X"/>
+                <outlet property="workout" destination="Rxp-b8-Hcm" id="yI0-Xw-YXT"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
