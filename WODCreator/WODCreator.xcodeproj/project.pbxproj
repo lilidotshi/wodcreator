@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222ECF37203CE171008DC67C /* DateUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222ECF36203CE171008DC67C /* DateUtilities.swift */; };
 		22C541EC203B93D6006A9BDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C541EB203B93D6006A9BDF /* AppDelegate.swift */; };
 		22C541EE203B93D6006A9BDF /* WODCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C541ED203B93D6006A9BDF /* WODCreatorViewController.swift */; };
 		22C541F1203B93D6006A9BDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C541EF203B93D6006A9BDF /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		222ECF36203CE171008DC67C /* DateUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilities.swift; sourceTree = "<group>"; };
 		22C541E8203B93D6006A9BDF /* WODCreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WODCreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C541EB203B93D6006A9BDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22C541ED203B93D6006A9BDF /* WODCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WODCreatorViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222ECF35203CE15C008DC67C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				222ECF36203CE171008DC67C /* DateUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		22C541DF203B93D6006A9BDF = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 		22C541EA203B93D6006A9BDF /* WODCreator */ = {
 			isa = PBXGroup;
 			children = (
+				222ECF35203CE15C008DC67C /* Utilities */,
 				22C54226203CBBAD006A9BDF /* UI */,
 				22C54225203CBB90006A9BDF /* Workout */,
 				22C541EB203B93D6006A9BDF /* AppDelegate.swift */,
@@ -302,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222ECF37203CE171008DC67C /* DateUtilities.swift in Sources */,
 				22C54222203BAB91006A9BDF /* MuscleGroups.swift in Sources */,
 				22C5421C203BA137006A9BDF /* WorkoutHistoryTableViewCell.swift in Sources */,
 				22C54224203BB72B006A9BDF /* Equipment.swift in Sources */,

@@ -20,8 +20,7 @@ class WorkoutHistoryTableViewCell: UITableViewCell {
 
     func configure(with workout: Workout) {
         workoutLabel.text = workout.displayableString
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM/dd/YY"
+        let dateFormatter = Utilities.shared.dateFormatter
         lastDone.text = dateFormatter.string(from: workout.lastPerformed)
     }
 
