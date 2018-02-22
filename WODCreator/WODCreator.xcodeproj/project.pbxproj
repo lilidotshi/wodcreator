@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		222ECF37203CE171008DC67C /* DateUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222ECF36203CE171008DC67C /* DateUtilities.swift */; };
+		222ECF39203E3062008DC67C /* TestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 222ECF38203E3062008DC67C /* TestData.json */; };
+		222ECF3A203E3062008DC67C /* TestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 222ECF38203E3062008DC67C /* TestData.json */; };
+		222ECF3D203E4D45008DC67C /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222ECF3C203E4D45008DC67C /* DataStore.swift */; };
 		22C541EC203B93D6006A9BDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C541EB203B93D6006A9BDF /* AppDelegate.swift */; };
 		22C541EE203B93D6006A9BDF /* WODCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C541ED203B93D6006A9BDF /* WODCreatorViewController.swift */; };
 		22C541F1203B93D6006A9BDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C541EF203B93D6006A9BDF /* Main.storyboard */; };
@@ -42,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		222ECF36203CE171008DC67C /* DateUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilities.swift; sourceTree = "<group>"; };
+		222ECF38203E3062008DC67C /* TestData.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = TestData.json; sourceTree = "<group>"; };
+		222ECF3C203E4D45008DC67C /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		22C541E8203B93D6006A9BDF /* WODCreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WODCreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C541EB203B93D6006A9BDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22C541ED203B93D6006A9BDF /* WODCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WODCreatorViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +140,7 @@
 			children = (
 				22C54200203B93D7006A9BDF /* WODCreatorTests.swift */,
 				22C54202203B93D7006A9BDF /* Info.plist */,
+				222ECF38203E3062008DC67C /* TestData.json */,
 			);
 			path = WODCreatorTests;
 			sourceTree = "<group>";
@@ -154,6 +160,7 @@
 				22C5421D203BAB14006A9BDF /* Workouts.swift */,
 				22C54221203BAB91006A9BDF /* MuscleGroups.swift */,
 				22C54223203BB72B006A9BDF /* Equipment.swift */,
+				222ECF3C203E4D45008DC67C /* DataStore.swift */,
 			);
 			path = Workout;
 			sourceTree = "<group>";
@@ -286,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22C54220203BAB37006A9BDF /* WorkoutHistoryTableViewCell.xib in Resources */,
+				222ECF39203E3062008DC67C /* TestData.json in Resources */,
 				22C541F6203B93D6006A9BDF /* LaunchScreen.storyboard in Resources */,
 				22C5421A203B96BB006A9BDF /* Assets.xcassets in Resources */,
 				22C541F1203B93D6006A9BDF /* Main.storyboard in Resources */,
@@ -296,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222ECF3A203E3062008DC67C /* TestData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +329,7 @@
 				22C541EE203B93D6006A9BDF /* WODCreatorViewController.swift in Sources */,
 				22C541EC203B93D6006A9BDF /* AppDelegate.swift in Sources */,
 				22C54229203CBC21006A9BDF /* HomeViewController.swift in Sources */,
+				222ECF3D203E4D45008DC67C /* DataStore.swift in Sources */,
 				22C5421E203BAB14006A9BDF /* Workouts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,25 +1,40 @@
-enum DefaultEquipment: String {
+enum DefaultEquipment {
     case barbell
     case kettlebell
-    case dumbell
+    case dumbbell
     case bodyweight
-    case jumprope = "jump rope"
+    case jumprope
     case rower
+    case box
+    case other(String)
+    
+    var displayableName: String {
+        switch self {
+        case .barbell:
+            return "barbell"
+        case .dumbbell:
+            return "dumbbell"
+        case .kettlebell:
+            return "kettlebell"
+        case .bodyweight:
+            return "body weight"
+        case .jumprope:
+            return "jump rope"
+        case .rower:
+            return "rower"
+        case .box:
+            return "box"
+        case .other(let name):
+            return name
+        }
+    }
 }
 
 struct Equipment: Codable {
-    let equipment: String
-    let weight: Int?
-    let usinglb: Bool
+    let name: String
+    let id: Int
+}
 
-    init(defaultEquipment: DefaultEquipment, weight: Int?, usinglb: Bool = true) {
-        self.init(equipment: defaultEquipment.rawValue, weight: weight, usinglb: usinglb)
-    }
-
-    init(equipment: String, weight: Int?, usinglb: Bool = true) {
-        self.equipment = equipment
-        self.weight = weight
-        self.usinglb = usinglb
-    }
-
+struct EquipmentList: Codable {
+    let equipment: [Equipment]
 }

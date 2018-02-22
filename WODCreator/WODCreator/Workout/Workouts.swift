@@ -4,7 +4,8 @@ struct Workout: Codable {
     struct Component: Codable {
         let exercise: Exercise
         let repScheme: [Int]
-
+        let weight: Int?
+        
         var displayableComponent: String {
             var fullString = "\(exercise.name) ("
             for (index, item) in repScheme.enumerated() {
@@ -36,6 +37,7 @@ struct Workout: Codable {
  */
 struct Exercise: Codable {
     let name: String
+    let id: String
     let equipment: Equipment
     let musclesWorked: [MuscleGroups]
 }

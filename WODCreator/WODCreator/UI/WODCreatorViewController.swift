@@ -12,7 +12,21 @@ class WODCreatorViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let sharedEquipment = EquipmentContext.shared
+        let sharedMuscles = MuscleGroupsContext.shared
+        if let path = Bundle.main.path(forResource: "TestData", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                try sharedEquipment.configure(with: data)
+                try sharedMuscles.configure(with: data)
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
+        
+        print(sharedEquipment.equipment)
+        print(sharedMuscles.muscleGroups)
     }
 
     override func didReceiveMemoryWarning() {

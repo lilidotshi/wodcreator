@@ -1,4 +1,4 @@
-enum MuscleGroups: String, Codable {
+enum Muscles: String, Codable {
     case ankle
     case calves
     case quads
@@ -14,4 +14,13 @@ enum MuscleGroups: String, Codable {
     case forearm
     case neck
     case traps
+}
+
+struct MuscleGroups: Codable {
+    let name: String
+    let id: Int
+}
+
+struct MuscleGroupList: Codable {
+    let muscles: [MuscleGroups]
 }

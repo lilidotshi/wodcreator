@@ -1,0 +1,60 @@
+{
+    "exercises": [
+        {
+            "name": "Back Squat",
+            "id": 1,
+            "equipment": 1,
+            "muscles": [1, 2]
+        },
+        {
+            "name": "Front Squat",
+            "id": 2,
+            "equipment": 1,
+            "muscles": [1, 2]
+        },
+        {
+            "name": "Double Unders",
+            "id": 3,
+            "equipment": 2,
+            "muscles": [1]
+        }
+    ],
+    "equipment": [
+        {
+            "name": "barbell",
+            "id": 1
+        },
+        {
+            "name": "jump rope",
+            "id": 2
+        }
+    ],
+    "workouts": [
+        {
+            "name": "Squat Hell",
+            "id": 1,
+            "components": [
+                {
+                    "exercise": 1,
+                    "weight": 95,
+                    "repscheme": [5,5,3,3,1,1]
+                },
+                {
+                    "exercise": 2,
+                    "weight": 95,
+                    "repscheme": [5,5,3,3,1,1]
+                }
+            ]
+        }
+    ],
+    "muscles": [
+        {
+            "name": "glutes",
+            "id": 1
+        },
+        {
+            "name": "quads",
+            "id": 2
+        }
+    ]
+}
